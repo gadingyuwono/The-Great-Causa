@@ -1,0 +1,330 @@
+<html>
+    <head>
+<title>The Great Causa</title>
+<link rel="icon" type="png" href="garuda.png">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Rubik+Broken+Fax&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+<style>
+    body{
+       margin: 0;
+
+    }
+    @font-face {
+       
+       font-family: 'masterplan';
+       src: url(MASTERPLAN___.ttf);
+   }
+    .container1{
+      
+      background-color:  rgb(30, 30, 30);
+            display: flex;
+      flex-direction: column;
+        height: 87vh;
+      
+        justify-content: center;
+        align-items: center;
+        
+       
+    }
+    
+   
+    .container1 h1{
+        text-align: center;
+        font-family: 'masterplan';
+        font-weight: 100;
+      color: rgb(255, 250, 243);
+        font-size: 200;
+        margin: 0;
+        
+    }
+    .container1 p{
+        text-align: center;
+        font-family: 'segoe ui';
+        color: rgb(255, 250, 243);
+        font-weight: normal;
+        letter-spacing: 35px;
+        margin: 0;
+    }
+
+    .container2{
+        background-image: linear-gradient(to top right,  rgb(255, 250, 243),   rgb(255, 250, 243));
+      display: flex;
+      flex-direction: column;
+        height: 100vh;
+      justify-content: center;
+       align-items: center;
+        
+       
+    }
+
+    .container2 h1{
+        text-align: center;
+        font-family: 'dm sans';
+        font-weight:200;
+      color:rgb(28, 28, 28);
+        font-size: 50;
+        margin: 0;
+       
+          
+    }
+    
+    .container2 h1 span{
+        text-align: center;
+        font-family: 'masterplan';
+        font-weight: 100;
+      color:rgb(189, 50, 50);
+        font-size: 50;
+        letter-spacing: 3px;
+        margin: 0;
+    }
+    .container2 p{
+        text-align: center;
+        font-family: 'dm sans';
+        color: rgb(28, 28, 28);
+        font-weight: 300;
+       
+        max-width: 1000px;
+          
+       
+
+       
+    }
+    .container2 p .highlight{
+        text-align: center;
+        font-family: 'masterplan';
+        color:rgb(28, 28, 28);
+        font-weight:100;
+        font-size: 20;
+        margin: 0;
+    }
+     .container3 {
+        background-image:  linear-gradient(to top right,  rgb(255, 250, 243),   rgb(255, 250, 243));
+      display: flex;
+      flex-direction: column;
+        height: 55vh;
+      
+        
+        align-items: center;
+        
+     }
+    
+     .container3 h1{
+        text-align: center;
+        font-family: 'dm sans';
+        font-weight:200;
+      color:rgb(28, 28, 28);
+        font-size: 50;
+        margin: 0;
+       
+          
+    }
+    
+    .container3 h1 span{
+        text-align: center;
+        font-family: 'masterplan';
+        font-weight: 100;
+      color:rgb(28, 28, 28);
+        font-size: 100;
+        letter-spacing: 3px;
+        margin: 0;
+    }
+    
+    .container3 p{
+        text-align: center;
+        font-family: 'dm sans';
+        color: rgb(28, 28, 28);
+        font-weight: 300;
+       letter-spacing: 10px;
+        
+          
+       
+
+       
+    }
+    .icons {
+   display: flex;
+    justify-content: center;
+}
+
+.icons i {
+    margin: 10px 40px; /* Menambahkan margin agar ikon terpisah */
+}
+.icons1 {
+   display: flex;
+    justify-content: center;
+}
+
+.icons1 i {
+    margin: 10 30px; /* Menambahkan margin agar ikon terpisah */
+}
+.fa-telegram, .fa-instagram, .fa-whatsapp, .fa-twitter, .fa-discord{
+    font-size: 50px;
+    color: rgb(28, 28, 28);
+}
+
+
+
+
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'dm sans', sans-serif;
+}
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px 0px 20px;
+  flex-wrap: wrap;
+  background-color:  rgb(28, 28, 28);
+ 
+  
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 100;
+  font-family: 'masterplan';
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 10px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  
+  border-radius: 2px;
+  letter-spacing: 5px;
+  transition: all 0.3s ease;
+}
+
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+.garuda{
+    width: 50px;
+    height: 50px;
+}
+</style>
+
+    </head>
+   
+    <body>
+        <nav>
+            <div class="logo">
+<a href=""><img src="garuda.png" class="garuda"></a>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+               <li><a href="thegreatcausa.html">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Update</a></li>
+               
+            </ul>
+         </nav>
+       <div class="container1">
+<h1>THE GREAT CAUSA</h1>
+<p>FORUM POLITIK & HUKUM</p>
+
+       </div>
+       <div class="container2">
+      
+<h1>FORUM POLITIK & HUKUM DI <SPAN>INDONESIA</SPAN></h1>
+<p>FORUM POLITIK DAN HUKUM <span class="highlight">THE GREAT CAUSA</span> MERUPAKAN WADAH BAGI PARA PEMIKIR KRITIS DAN PEMINAT POLITIK UNTUK BERDISKUSI DAN BERTUKAR GAGASAN TENTANG BERBAGAI ISU KONTEMPORER. NAMA <span class="highlight">THE GREAT CAUSA</span> MEMILIKI MAKNA GANDA, BAIK SECARA HARFIAH MAUPUN ISTILAH.</p>
+    
+<p>SECARA HARFIAH, <span class="highlight">THE GREAT CAUSA</span> BERARTI "TUJUAN AGUNG". INI MENCERMIN KAN TUJUAN FORUM UNTUK MENDORONG PERDEBATAN YANG BERMAKNA DAN KONSTRUKTIF TENTANG BERBAGAI ISU PENTING, DENGAN TUJUAN MENCAPAI KEMAJUAN DAN SOLUSI YANG BERMANFAAT BAGI MASYARAKAT.
+    SECARA ISTILAH, <span class="highlight">CAUSA</span> MERUJUK PADA "SEBAB" ATAU "ALASAN" DALAM BAHASA LATIN. DALAM KONTEKS FORUM POLITIK DAN HUKUM YANG DISEBUT <span class="highlight">THE GREAT CAUSA</span>, ISTILAH INI MENUNJUKKAN PENTINGNYA UNTUK MENYELIDIKI AKAR PERMASALAHAN, MEMAHAMI SEBAB-SEBAB DI BALIK FENOMENA POLITIK DAN HUKUM, SERTA MENDORONG DISKUSI YANG MENDALAM TENTANG ISU-ISU TERSEBUT.</p>
+    
+    <p> FORUM INI BERTUJUAN UNTUK MENGGALI AKAR PERMASALAHAN DAN MENDORONG DISKUSI YANG MENDALAM TENTANG BERBAGAI ISU POLITIK DAN HUKUM.
+    <span class="highlight">THE GREAT CAUSA</span> BUKAN HANYA FORUM DEBAT BIASA, MELAINKAN PLATFORM YANG MENDORONG PARTISIPASI AKTIF DARI PARA ANGGOTANYA. FORUM INI MENYEDIAKAN RUANG BAGI PARA PEMIKIR KRITIS UNTUK BERBAGI IDE, BERTUKAR PERSPEKTIF, DAN MEMBANGUN SOLUSI BERSAMA.
+    MELALUI DISKUSI YANG TERARAH DAN KONSTRUKTIF, <span class="highlight">THE GREAT CAUSA</span> DIHARAPKAN DAPAT BERKONTRIBUSI PADA TERCIPTANYA MASYARAKAT YANG LEBIH DEMOKRATIS, ADIL, DAN SEJAHTERA.
+    </p>
+       </div>
+       <div class="container3">
+        <h1>BERGABUNG DENGAN <SPAN>THE GREAT CAUSA</SPAN></h1>
+<p>ANDA BISA BERGABUNG MELALUI:</p>
+<div class="icons">
+    <a href=""><i class="fab fa-telegram"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="icons1">
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-discord"></i></a>
+                   
+                </div>
+       </div>
+    </body> 
+</html>
